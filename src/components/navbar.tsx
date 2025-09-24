@@ -60,14 +60,14 @@ export default function Navbar() {
         <Link href={"/"}>
           <div className="flex items-center gap-4 hover:opacity-75 hover:bg-slate-500 transition ease-in-out hover:-translate-y-1 hover:scale-110 xl:p-2 p-0 m-1 rounded-xl hover:shadow-inner hover:shadow-slate-800">
             <Image
-              src="/Valstore_Icon.png"
+              src="/valstore.png"
               alt="Valstore Logo"
               width={64}
               height={64}
               className="hidden xl:block"
             />
             <Image
-              src="/Valstore_Icon.png"
+              src="/valstore.png"
               alt="Valstore Logo"
               width={42}
               height={42}
