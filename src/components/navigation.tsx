@@ -14,7 +14,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/ValStore_Icon.png"
+              src="/valstore.png"
               alt="Valstore"
               width={32}
               height={32}
