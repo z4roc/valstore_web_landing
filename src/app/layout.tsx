@@ -1,29 +1,29 @@
+import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "@/components/navbar";
+import { Navigation } from "@/components/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ValStore",
+  title: "Valstore - Check Your Valorant Store Anywhere",
   description:
-    "Access your Valorant shop anywhere, without opening the game, open source and secure.",
+    "A portable access to your Valorant Shop built with Flutter. Check your store anywhere, anytime.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <Navbar />
+      <body className={`${inter.className} antialiased`}>
+        <div className="grid-bg min-h-screen">
+          <Navigation />
           {children}
-        </ThemeProvider>
+        </div>
       </body>
     </html>
   );
